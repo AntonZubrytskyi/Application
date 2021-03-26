@@ -12,11 +12,9 @@ class PostForm extends Component {
             body: ''
         }
     }
-
     changeHandler = e => {
         this.setState({ [e.target.name]: e.target.value })
     }
-
     submitHandler = e => {
         e.preventDefault()
         console.log(this.state)
@@ -29,13 +27,14 @@ class PostForm extends Component {
                 console.log(error)
             })
     }
-
     render() {
         const { userId, title, body } = this.state
         return (
             <div>
                 <form onSubmit={this.submitHandler}>
-                    <div>UserId:<input
+                    <div>
+                        UserId:
+                        <input
                             type="text"
                             name="userId"
                             value={userId}
@@ -43,7 +42,8 @@ class PostForm extends Component {
                         />
                     </div>
                     <div>
-                     Title:<input
+                     Title:
+                        <input
                             type="text"
                             name="title"
                             value={title}
@@ -51,7 +51,8 @@ class PostForm extends Component {
                         />
                     </div>
                     <div>
-                      Body:<input
+                      Body:
+                        <input
                             type="text"
                             name="body"
                             value={body}
@@ -64,5 +65,4 @@ class PostForm extends Component {
         )
     }
 }
-
 export default PostForm

@@ -17,15 +17,16 @@ function FetchPostsID(){
             })
     },[id])
 
-
     return(
         <div>
-           Type UserID(1-10): <input  type='number' value={id} onChange={e=>setId(e.target.value)}/>
+           Type UserID(1-10):
+            <input
+            type='number'
+            value={id}
+            onChange={e=>setId(e.target.value)}
+            />
             <MapPostsID posts={posts}/>
-
         </div>
     )
-
 }
-
 export default FetchPostsID;

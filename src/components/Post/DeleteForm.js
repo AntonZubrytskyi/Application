@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-
-
-
 class DeleteForm extends Component {
     constructor(props) {
         super(props)
@@ -15,11 +12,9 @@ class DeleteForm extends Component {
             body: ''
         }
     }
-
     changeHandler = e => {
         this.setState({ [e.target.name]: e.target.value })
     }
-
     submitHandler = e => {
         e.preventDefault()
         console.log(this.state)
@@ -32,14 +27,11 @@ class DeleteForm extends Component {
                 console.log(error)
             })
     }
-
     render() {
         const { id } = this.state
         return (
             <div>
                 <form onSubmit={this.submitHandler}>
-
-
                     <div>
                         Id: <input
                         type="text"
@@ -47,12 +39,10 @@ class DeleteForm extends Component {
                         value={id}
                         onChange={this.changeHandler}
                     /></div>
-
                     <button className='submit' type="submit">Delete</button>
                 </form>
             </div>
         )
     }
 }
-
 export default DeleteForm;

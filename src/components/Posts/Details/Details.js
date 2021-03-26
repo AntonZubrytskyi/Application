@@ -8,14 +8,11 @@ function Details(){
     const openPopup = (value) => {
         setOpen(value)
     };
-
     return(
         <div>
             {open === true ? <Popup openPopup={openPopup}/> : null}
             <button  className='btn3' onClick={()=>setOpen(true)}>Add new</button>
         </div>
     )
-
 }
-
 export default Details;

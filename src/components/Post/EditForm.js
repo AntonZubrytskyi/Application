@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-
-
-
 class EditForm extends Component {
     constructor(props) {
         super(props)
@@ -38,27 +35,26 @@ class EditForm extends Component {
         return (
             <div>
                 <form onSubmit={this.submitHandler}>
-
-
                     <div>
-                        Id:<input
+                        Id:
+                        <input
                         type="text"
                         name="id"
                         value={id}
                         onChange={this.changeHandler}
                     /></div>
-
                     <div>
-                        UserId:<input
+                        UserId:
+                        <input
                         type="text"
                         name="userId"
                         value={userId}
                         onChange={this.changeHandler}
                     />
                     </div>
-
                     <div>
-                        Title:<input
+                        Title:
+                        <input
                         type="text"
                         name="title"
                         value={title}
@@ -79,5 +75,4 @@ class EditForm extends Component {
         )
     }
 }
-
 export default EditForm;

@@ -3,7 +3,6 @@ import axios from "axios";
 import MapCommentsID from "./MapCommentId";
 import './Post.css'
 
-
 function FetchCommentsID(){
 
     const [posts, setPosts]= useState([]);
@@ -16,16 +15,17 @@ function FetchCommentsID(){
                 console.log(error)
             })
     },[id])
-
-
     return(
         <div>
-            Type PostID(1-100): <input type='number' value={id} onChange={e=>setId(e.target.value)}/>
+            Type PostID(1-100):
+            <input
+            type='number'
+            value={id}
+            onChange={e=>setId(e.target.value)}
+             />
             <MapCommentsID posts={posts}/>
 
         </div>
     )
-
 }
-
 export default FetchCommentsID;

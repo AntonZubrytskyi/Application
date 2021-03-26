@@ -1,7 +1,6 @@
 import React from 'react';
 import { DataGrid } from '@material-ui/data-grid';
 
-
 function MapUsers({users}){
 
     const columns = [
@@ -13,17 +12,11 @@ function MapUsers({users}){
         { field: 'phone', headerName: 'Phone', width: 200 }
     ];
 
-
-
-
     return(
 
         <div style={{ height: '78vh', width: '100%' }}>
             <DataGrid rows={users} columns={columns} pageSize={10} />
         </div>
-
     )
-
 }
-
 export default MapUsers;

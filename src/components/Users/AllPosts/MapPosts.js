@@ -1,7 +1,6 @@
 import React from 'react';
 import '../User.css'
 
-
 function MapPosts({posts}){
 
     return(
@@ -17,7 +16,5 @@ function MapPosts({posts}){
             }
         </div>
     )
-
 }
-
 export default MapPosts;

@@ -1,8 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from "axios";
 import MapPosts from "./MapPosts";
-import RouterToPosts from "../RouterToPosts";
-
 
 function FetchPosts(){
 
@@ -15,15 +13,10 @@ function FetchPosts(){
                 console.log(error)
             })
     },[])
-
-
     return(
         <div>
             <MapPosts posts={posts}/>
-
         </div>
     )
-
 }
-
 export default FetchPosts;

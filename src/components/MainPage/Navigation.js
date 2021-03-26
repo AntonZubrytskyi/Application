@@ -11,9 +11,7 @@ import Posts from "../Posts/Posts";
 import AllPosts from "../Users/AllPosts/AllPosts";
 import Details from "../Posts/Details/Details";
 
-
 function Navigation(){
-
     return(
         <div>
             <Router>
@@ -26,10 +24,7 @@ function Navigation(){
                     <Route path='/post' render={()=>{return <Post/>}}/>
                 </Switch>
             </Router>
-
         </div>
     )
-
 }
-
 export default Navigation;

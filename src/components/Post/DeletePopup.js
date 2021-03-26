@@ -1,8 +1,6 @@
 import React from 'react';
-
 import './Post.css';
 import DeleteForm from "./DeleteForm";
-
 
 function DeletePopup({deletePopup}) {
 
@@ -17,5 +15,4 @@ function DeletePopup({deletePopup}) {
         </>
     )
 }
-
 export default DeletePopup;

@@ -8,9 +8,8 @@ function Users(){
     return(
         <div>
             <FetchUsers/>
-            <Link  to='/allposts'><button className='btn' >Posts</button></Link>
+            <Link  to='/allposts'><button className='btn'> Posts </button></Link>
         </div>
     )
 }
-
 export default Users;

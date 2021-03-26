@@ -2,7 +2,6 @@ import React,{useState,useEffect} from 'react';
 import axios from "axios";
 import MapUsers from "./MapUsers";
 
-
 function FetchUsers(){
 
     const [users, setUsers]= useState([])
@@ -15,13 +14,11 @@ function FetchUsers(){
             })
     },[])
 
-
     return(
         <div>
             <MapUsers users={users}/>
         </div>
     )
-    
 }
 
 export default FetchUsers;

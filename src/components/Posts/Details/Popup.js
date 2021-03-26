@@ -2,7 +2,6 @@ import React from 'react';
 import '../Posts.css';
 import PostForm from "./PostForm";
 
-
 function Popup({openPopup}) {
 
     return(
@@ -16,5 +15,4 @@ function Popup({openPopup}) {
         </>
     )
 }
-
 export default Popup;

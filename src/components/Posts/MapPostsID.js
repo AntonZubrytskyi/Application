@@ -9,16 +9,13 @@ function MapPostsID({posts}){
         { field: 'body', headerName: 'Body', width: 500 },
 
     ];
-
     return(
         <div>
             <div style={{ height: '75vh', width: '100%' }}>
                 <DataGrid rows={posts} columns={columns} pageSize={10} />
             </div>
-
         </div>
     )
-
 }
 
 export default MapPostsID;
