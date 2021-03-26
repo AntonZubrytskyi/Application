@@ -1,0 +1,92 @@
+.backgroundPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(120, 120, 120, 0.8);
+}
+
+.popupContainer {
+    padding: 20px;
+    position: absolute;
+    z-index: 11;
+    background: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 70px;
+    text-align: center;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.popupContainerExitButton {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.submit{
+    background-color: midnightblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.btn3{
+    background-color: cornflowerblue;
+    color: black;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left:45% ;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    padding: 5px;
+
+}
+
+
+.div{
+    margin-left: 45%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=number] {
+    width: 60px;
+    height: 30px;
+    font-size: x-large;
+}
+
+
+.btn{
+
+    background-color: cornflowerblue;
+    color:black;
+    font-size: 24px;
+    margin-left: 45%;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    padding: 5px;
+}
+
+.title{
+    color: navy;
+}

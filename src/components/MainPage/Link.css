@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: antiquewhite;
+    font-family: "Comic Sans MS";
+    font-size: x-large;
+    font-weight: bold;
+    color: #282c34;
+
+}
+
+nav{
+    background: deepskyblue;
+    height: 80px;
+    width: 100%;
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+nav li{
+    line-height: 80px;
+    margin: 0 5px;
+
+
+}
